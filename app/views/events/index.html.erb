@@ -1,9 +1,8 @@
 <h1>Events</h1>
 
-<% @events.each do |f| %>
+<% @events.each do |current_events| %>
   <div class="eventful">
-    <h3><%= f.name %></h3>
-    <%= f.date %> <br>
-    <%= f.capacity%>
+    <h3><%= link_to current_events.name, current_events %></h3>
+    <%= current_events.date %> <br>
   </div>
 <% end %>
